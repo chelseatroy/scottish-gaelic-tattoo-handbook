@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1424A80DB5002A0014 /* AppDelegate.swift */; };
+		76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1624A80DB5002A0014 /* SceneDelegate.swift */; };
+		76834F1924A80DB5002A0014 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1824A80DB5002A0014 /* FirstViewController.swift */; };
+		76834F1B24A80DB5002A0014 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1A24A80DB5002A0014 /* SecondViewController.swift */; };
+		76834F1E24A80DB5002A0014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F1C24A80DB5002A0014 /* Main.storyboard */; };
+		76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1F24A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld */; };
+		76834F2324A80DB6002A0014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2224A80DB6002A0014 /* Assets.xcassets */; };
+		76834F2624A80DB7002A0014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */; };
+		76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */; };
+		76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76834F2D24A80DB7002A0014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76834F0924A80DB5002A0014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76834F1024A80DB5002A0014;
+			remoteInfo = ScottishGaelicTattooHandbook;
+		};
+		76834F3824A80DB7002A0014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76834F0924A80DB5002A0014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76834F1024A80DB5002A0014;
+			remoteInfo = ScottishGaelicTattooHandbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76834F1124A80DB5002A0014 /* ScottishGaelicTattooHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottishGaelicTattooHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76834F1424A80DB5002A0014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76834F1624A80DB5002A0014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76834F1824A80DB5002A0014 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		76834F1A24A80DB5002A0014 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		76834F1D24A80DB5002A0014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76834F2024A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScottishGaelicTattooHandbook.xcdatamodel; sourceTree = "<group>"; };
+		76834F2224A80DB6002A0014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76834F2524A80DB7002A0014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76834F2724A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76834F2C24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishGaelicTattooHandbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookTests.swift; sourceTree = "<group>"; };
+		76834F3224A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishGaelicTattooHandbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookUITests.swift; sourceTree = "<group>"; };
+		76834F3D24A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76834F0E24A80DB5002A0014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F2924A80DB7002A0014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F3424A80DB7002A0014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76834F0824A80DB5002A0014 = {
+			isa = PBXGroup;
+			children = (
+				76834F1324A80DB5002A0014 /* ScottishGaelicTattooHandbook */,
+				76834F2F24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests */,
+				76834F3A24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests */,
+				76834F1224A80DB5002A0014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76834F1224A80DB5002A0014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76834F1124A80DB5002A0014 /* ScottishGaelicTattooHandbook.app */,
+				76834F2C24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.xctest */,
+				76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76834F1324A80DB5002A0014 /* ScottishGaelicTattooHandbook */ = {
+			isa = PBXGroup;
+			children = (
+				76834F1424A80DB5002A0014 /* AppDelegate.swift */,
+				76834F1624A80DB5002A0014 /* SceneDelegate.swift */,
+				76834F1824A80DB5002A0014 /* FirstViewController.swift */,
+				76834F1A24A80DB5002A0014 /* SecondViewController.swift */,
+				76834F1C24A80DB5002A0014 /* Main.storyboard */,
+				76834F2224A80DB6002A0014 /* Assets.xcassets */,
+				76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */,
+				76834F2724A80DB7002A0014 /* Info.plist */,
+				76834F1F24A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld */,
+			);
+			path = ScottishGaelicTattooHandbook;
+			sourceTree = "<group>";
+		};
+		76834F2F24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */,
+				76834F3224A80DB7002A0014 /* Info.plist */,
+			);
+			path = ScottishGaelicTattooHandbookTests;
+			sourceTree = "<group>";
+		};
+		76834F3A24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */,
+				76834F3D24A80DB7002A0014 /* Info.plist */,
+			);
+			path = ScottishGaelicTattooHandbookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76834F1024A80DB5002A0014 /* ScottishGaelicTattooHandbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76834F4024A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbook" */;
+			buildPhases = (
+				76834F0D24A80DB5002A0014 /* Sources */,
+				76834F0E24A80DB5002A0014 /* Frameworks */,
+				76834F0F24A80DB5002A0014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScottishGaelicTattooHandbook;
+			productName = ScottishGaelicTattooHandbook;
+			productReference = 76834F1124A80DB5002A0014 /* ScottishGaelicTattooHandbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76834F2B24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76834F4324A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbookTests" */;
+			buildPhases = (
+				76834F2824A80DB7002A0014 /* Sources */,
+				76834F2924A80DB7002A0014 /* Frameworks */,
+				76834F2A24A80DB7002A0014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76834F2E24A80DB7002A0014 /* PBXTargetDependency */,
+			);
+			name = ScottishGaelicTattooHandbookTests;
+			productName = ScottishGaelicTattooHandbookTests;
+			productReference = 76834F2C24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76834F3624A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76834F4624A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbookUITests" */;
+			buildPhases = (
+				76834F3324A80DB7002A0014 /* Sources */,
+				76834F3424A80DB7002A0014 /* Frameworks */,
+				76834F3524A80DB7002A0014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76834F3924A80DB7002A0014 /* PBXTargetDependency */,
+			);
+			name = ScottishGaelicTattooHandbookUITests;
+			productName = ScottishGaelicTattooHandbookUITests;
+			productReference = 76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76834F0924A80DB5002A0014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Chelsea Troy";
+				TargetAttributes = {
+					76834F1024A80DB5002A0014 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					76834F2B24A80DB7002A0014 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 76834F1024A80DB5002A0014;
+					};
+					76834F3624A80DB7002A0014 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 76834F1024A80DB5002A0014;
+					};
+				};
+			};
+			buildConfigurationList = 76834F0C24A80DB5002A0014 /* Build configuration list for PBXProject "ScottishGaelicTattooHandbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76834F0824A80DB5002A0014;
+			productRefGroup = 76834F1224A80DB5002A0014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76834F1024A80DB5002A0014 /* ScottishGaelicTattooHandbook */,
+				76834F2B24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests */,
+				76834F3624A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76834F0F24A80DB5002A0014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76834F2624A80DB7002A0014 /* LaunchScreen.storyboard in Resources */,
+				76834F2324A80DB6002A0014 /* Assets.xcassets in Resources */,
+				76834F1E24A80DB5002A0014 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F2A24A80DB7002A0014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F3524A80DB7002A0014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76834F0D24A80DB5002A0014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */,
+				76834F1B24A80DB5002A0014 /* SecondViewController.swift in Sources */,
+				76834F1924A80DB5002A0014 /* FirstViewController.swift in Sources */,
+				76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */,
+				76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F2824A80DB7002A0014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76834F3324A80DB7002A0014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76834F2E24A80DB7002A0014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76834F1024A80DB5002A0014 /* ScottishGaelicTattooHandbook */;
+			targetProxy = 76834F2D24A80DB7002A0014 /* PBXContainerItemProxy */;
+		};
+		76834F3924A80DB7002A0014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76834F1024A80DB5002A0014 /* ScottishGaelicTattooHandbook */;
+			targetProxy = 76834F3824A80DB7002A0014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76834F1C24A80DB5002A0014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76834F1D24A80DB5002A0014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76834F2524A80DB7002A0014 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76834F3E24A80DB7002A0014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76834F3F24A80DB7002A0014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76834F4124A80DB7002A0014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76834F4224A80DB7002A0014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76834F4424A80DB7002A0014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScottishGaelicTattooHandbook.app/ScottishGaelicTattooHandbook";
+			};
+			name = Debug;
+		};
+		76834F4524A80DB7002A0014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScottishGaelicTattooHandbook.app/ScottishGaelicTattooHandbook";
+			};
+			name = Release;
+		};
+		76834F4724A80DB7002A0014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScottishGaelicTattooHandbook;
+			};
+			name = Debug;
+		};
+		76834F4824A80DB7002A0014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPZFZF3JV9;
+				INFOPLIST_FILE = ScottishGaelicTattooHandbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chelseatroy.ScottishGaelicTattooHandbookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScottishGaelicTattooHandbook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76834F0C24A80DB5002A0014 /* Build configuration list for PBXProject "ScottishGaelicTattooHandbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76834F3E24A80DB7002A0014 /* Debug */,
+				76834F3F24A80DB7002A0014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76834F4024A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76834F4124A80DB7002A0014 /* Debug */,
+				76834F4224A80DB7002A0014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76834F4324A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76834F4424A80DB7002A0014 /* Debug */,
+				76834F4524A80DB7002A0014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76834F4624A80DB7002A0014 /* Build configuration list for PBXNativeTarget "ScottishGaelicTattooHandbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76834F4724A80DB7002A0014 /* Debug */,
+				76834F4824A80DB7002A0014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76834F1F24A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76834F2024A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodel */,
+			);
+			currentVersion = 76834F2024A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodel */;
+			path = ScottishGaelicTattooHandbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 76834F0924A80DB5002A0014 /* Project object */;
+}
