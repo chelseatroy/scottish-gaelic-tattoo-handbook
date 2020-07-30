@@ -40,7 +40,7 @@ class BlogPostServiceTests: XCTestCase {
         XCTAssertNotNil(blogPosts)
         XCTAssertEqual(blogPosts.count, 3)
         for post in blogPosts {
-            XCTAssertNotNil(post.title.rendered)
+            XCTAssertNotNil(post.title)
             XCTAssertNotNil(post.imageURL)
         }
         
