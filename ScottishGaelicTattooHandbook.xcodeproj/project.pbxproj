@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */; };
 		766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */; };
 		766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50024CE184E0080D666 /* BlogPostService.swift */; };
 		766EB50324CE186C0080D666 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50224CE186C0080D666 /* BlogPost.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostServiceTests.swift; sourceTree = "<group>"; };
 		766EB50024CE184E0080D666 /* BlogPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostService.swift; sourceTree = "<group>"; };
 		766EB50224CE186C0080D666 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */,
 				76834F3224A80DB7002A0014 /* Info.plist */,
 				766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */,
+				7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */,
 			);
 			path = ScottishGaelicTattooHandbookTests;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */,
+				7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */,
 				766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

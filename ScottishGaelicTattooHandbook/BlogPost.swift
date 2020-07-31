@@ -21,6 +21,11 @@ struct BlogPost: Codable {
         case title = "rendered"
     }
     
+    init(title: String, imageURL: String) {
+        self.title = title
+        self.imageURL = imageURL
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: RootKeys.self)
         self.imageURL = try container.decode(String.self, forKey: .imageURL)
