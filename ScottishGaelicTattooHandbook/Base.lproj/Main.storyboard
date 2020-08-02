@@ -338,7 +338,7 @@
                                                 <rect key="frame" x="0.0" y="1428" width="414" height="230"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicLionHead" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-d6-LJy">
-                                                        <rect key="frame" x="20" y="20" width="211" height="190"/>
+                                                        <rect key="frame" x="20" y="20" width="105.5" height="190"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out Gaelic.co for more blog posts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-hz-2dr">
                                                         <rect key="frame" x="30" y="20" width="354" height="190"/>
@@ -383,7 +383,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="tEl-Ms-J9G"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="I6z-fO-sJq"/>
                             </scrollView>
-                            <activityIndicatorView opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-MN-spX">
+                            <activityIndicatorView opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-MN-spX">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
