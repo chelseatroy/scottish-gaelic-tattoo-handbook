@@ -251,7 +251,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hfk-wO-yVj" userLabel="Blog Post Preview">
                                                 <rect key="frame" x="0.0" y="1066" width="414" height="161"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkn-OL-tca" userLabel="Blog Post Content">
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkn-OL-tca" userLabel="Blog Post Content">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Example Title Mwahaha" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYr-nD-C1r">
@@ -294,7 +294,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-ol-I5r" userLabel="Blog Post Preview">
                                                 <rect key="frame" x="0.0" y="1247" width="414" height="161"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-RN-KIX" userLabel="Blog Post Content">
+                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-RN-KIX" userLabel="Blog Post Content">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Example Title Mwahaha" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSZ-QM-N7y">
@@ -338,7 +338,7 @@
                                                 <rect key="frame" x="0.0" y="1428" width="414" height="230"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicLionHead" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-d6-LJy">
-                                                        <rect key="frame" x="20" y="20" width="105.5" height="190"/>
+                                                        <rect key="frame" x="20" y="20" width="211" height="190"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out Gaelic.co for more blog posts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-hz-2dr">
                                                         <rect key="frame" x="30" y="20" width="354" height="190"/>
@@ -383,7 +383,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="tEl-Ms-J9G"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="I6z-fO-sJq"/>
                             </scrollView>
-                            <activityIndicatorView opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-MN-spX">
+                            <activityIndicatorView opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="uRP-MN-spX">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
@@ -407,10 +407,13 @@
                     <connections>
                         <outlet property="firstBlogPostImage" destination="g5S-Pw-7cd" id="c16-qA-rsX"/>
                         <outlet property="firstBlogPostTitle" destination="FF8-ZA-RsA" id="LOz-OW-qaC"/>
+                        <outlet property="firstPostPreview" destination="wMQ-q8-9an" id="OLU-2e-8V7"/>
                         <outlet property="secondBlogPostImage" destination="wSf-bi-5LP" id="8l6-BY-hse"/>
                         <outlet property="secondBlogPostTitle" destination="AYr-nD-C1r" id="X5I-Mh-mPq"/>
+                        <outlet property="secondPostPreview" destination="Jkn-OL-tca" id="NyI-ML-cO6"/>
                         <outlet property="thirdBlogPostImage" destination="FhL-eS-eEm" id="hSM-BX-9sp"/>
                         <outlet property="thirdBlogPostTitle" destination="WSZ-QM-N7y" id="Sv4-do-eaH"/>
+                        <outlet property="thirdPostPreview" destination="H6L-RN-KIX" id="UoV-ZO-n8p"/>
                         <outlet property="waitSpinner" destination="uRP-MN-spX" id="iSw-ed-X4J"/>
                     </connections>
                 </viewController>

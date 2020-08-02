@@ -42,6 +42,8 @@ class BlogPostServiceTests: XCTestCase {
         for post in blogPosts {
             XCTAssertNotNil(post.title)
             XCTAssertNotNil(post.imageURL)
+            XCTAssertNotNil(post.URL)
+        XCTAssertTrue(post.URL.hasPrefix("https://gaelic.co/"))
         }
         
         XCTAssertNil(error)

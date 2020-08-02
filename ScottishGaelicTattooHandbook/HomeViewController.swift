@@ -13,12 +13,18 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var waitSpinner: UIActivityIndicatorView!
     
+    @IBOutlet weak var firstPostPreview: UIView!
+    @IBOutlet weak var secondPostPreview: UIView!
+    @IBOutlet weak var thirdPostPreview: UIView!
+    
     @IBOutlet weak var firstBlogPostTitle: UILabel!
     @IBOutlet weak var firstBlogPostImage: UIImageView!
     @IBOutlet weak var secondBlogPostTitle: UILabel!
     @IBOutlet weak var secondBlogPostImage: UIImageView!
     @IBOutlet weak var thirdBlogPostTitle: UILabel!
     @IBOutlet weak var thirdBlogPostImage: UIImageView!
+    
+    var blogPosts: [BlogPost] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +39,21 @@ class HomeViewController: UIViewController {
         self.firstBlogPostTitle.text = "Coming soon..."
         self.secondBlogPostTitle.text = "Coming soon..."
         self.thirdBlogPostTitle.text = "Coming soon..."
+        
+        let firstTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToBlogPost(sender:)))
+        self.firstPostPreview.addGestureRecognizer(firstTapGesture)
+        
+        let secondTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToBlogPost(sender:)))
+        self.secondPostPreview.addGestureRecognizer(secondTapGesture)
+        
+        let thirdTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToBlogPost(sender:)))
+        self.thirdPostPreview.addGestureRecognizer(thirdTapGesture)
+    }
+    
+    @objc func goToBlogPost(sender: UITapGestureRecognizer) {
+        if let blogPostIndex = sender.view?.tag {
+            print("URL is: \(self.blogPosts[blogPostIndex].URL)")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +61,8 @@ class HomeViewController: UIViewController {
              guard let confirmedBlogPosts = blogPosts, error == nil else {
                  return
              }
+            self.blogPosts = confirmedBlogPosts
+            
             self.firstBlogPostTitle.text = confirmedBlogPosts[0].title
             self.secondBlogPostTitle.text = confirmedBlogPosts[1].title
             self.thirdBlogPostTitle.text = confirmedBlogPosts[2].title

@@ -30,9 +30,9 @@ func testTableView_loadsBirds() {
     //Given
     let mockBlogPostService = MockBlogPostService()
     let mockBlogPosts = [
-        BlogPost(title: "First Title", imageURL: "example.com"),
-        BlogPost(title: "Second Title", imageURL: "example.com"),
-        BlogPost(title: "Third Title", imageURL: "example.com")
+        BlogPost(title: "First Title", imageURL: "example.com", URL: "example.com"),
+        BlogPost(title: "Second Title", imageURL: "example.com", URL: "example.com"),
+        BlogPost(title: "Third Title", imageURL: "example.com", URL: "example.com")
     ]
     mockBlogPostService.mockBlogPosts = mockBlogPosts
     
