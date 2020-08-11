@@ -23,13 +23,40 @@ class ScottishGaelicTattooHandbookUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testBlogPostSlidesUp_onTappingBlogPostPreview_andSlidesDown_whenDismissed() {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        let scrollViewsQuery = app.scrollViews
+        
+        let element = scrollViewsQuery.children(matching: .other).element(boundBy: 0)
+        element.children(matching: .other).element(boundBy: 4).children(matching: .other).element(boundBy: 0).tap()
+        
+        let doneButton = app.buttons["Done"]
+        XCTAssert(doneButton.isHittable)
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        doneButton.tap()
+        sleep(1)
+        XCTAssertFalse(doneButton.isHittable)
+        
+        element.children(matching: .other).element(boundBy: 5).children(matching: .other).element(boundBy: 0).tap()
+        
+        XCTAssert(doneButton.isHittable)
+
+        doneButton.tap()
+        sleep(1)
+        XCTAssertFalse(doneButton.isHittable)
+        
+        element.swipeUp()
+        element.children(matching: .other).element(boundBy: 6).children(matching: .other).element(boundBy: 0).tap()
+        
+        XCTAssert(doneButton.isHittable)
+
+        doneButton.tap()
+        sleep(1)
+        XCTAssertFalse(doneButton.isHittable)
+
     }
 
     func testLaunchPerformance() {
