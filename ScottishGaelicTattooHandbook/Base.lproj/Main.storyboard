@@ -334,7 +334,7 @@
                                                     <constraint firstItem="H6L-RN-KIX" firstAttribute="leading" secondItem="XoP-ol-I5r" secondAttribute="leading" id="dm9-rf-4a5"/>
                                                 </constraints>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb8-85-cvI">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb8-85-cvI" userLabel="Check Out Site View">
                                                 <rect key="frame" x="0.0" y="1428" width="414" height="230"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicLionHead" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-d6-LJy">
@@ -405,6 +405,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="checkOutSiteView" destination="yb8-85-cvI" id="teK-oF-cyv"/>
                         <outlet property="firstBlogPostImage" destination="g5S-Pw-7cd" id="c16-qA-rsX"/>
                         <outlet property="firstBlogPostTitle" destination="FF8-ZA-RsA" id="LOz-OW-qaC"/>
                         <outlet property="firstPostPreview" destination="wMQ-q8-9an" id="OLU-2e-8V7"/>

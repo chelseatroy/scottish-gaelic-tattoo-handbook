@@ -28,6 +28,8 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var thirdBlogPostTitle: UILabel!
     @IBOutlet weak var thirdBlogPostImage: UIImageView!
     
+    @IBOutlet weak var checkOutSiteView: UIView!
+    
     var blogPosts: [BlogPost] = []
     
     override func viewDidLoad() {
@@ -84,6 +86,10 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
         
         let thirdTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToBlogPost(sender:)))
         self.thirdPostPreview.addGestureRecognizer(thirdTapGesture)
+        
+        let goToSiteTapGesture = UITapGestureRecognizer(target: self, action: #selector(visitSite(sender:)))
+        self.checkOutSiteView.addGestureRecognizer(goToSiteTapGesture)
+
     }
     
     @objc func dismissDrawer() {
@@ -102,21 +108,30 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
     
     @objc func goToBlogPost(sender: UITapGestureRecognizer) {
         if let blogPostIndex = sender.view?.tag {
-            let url = URL(string: self.blogPosts[blogPostIndex].URL)!
-            self.webView.load(URLRequest(url: url))
-            
-            let slideUpDrawerAnimator = UIViewPropertyAnimator(
-                duration:0.5,
-                curve: .easeIn) {
-                self.slideUpDrawerView.frame = CGRect(
-                        x: 0,
-                        y: 40,
-                        width: self.view.frame.width,
-                        height: self.view.frame.height
-                )
-            }
-            slideUpDrawerAnimator.startAnimation()
+            animateWebViewToURL(urlString: self.blogPosts[blogPostIndex].URL)
         }
+    }
+    
+    @objc func visitSite(sender: UITapGestureRecognizer) {
+        animateWebViewToURL(urlString: "https://gaelic.co/")
+    }
+    
+    func animateWebViewToURL(urlString: String) {
+        let url = URL(string: urlString)!
+
+        self.webView.load(URLRequest(url: url))
+        
+        let slideUpDrawerAnimator = UIViewPropertyAnimator(
+            duration:0.5,
+            curve: .easeIn) {
+            self.slideUpDrawerView.frame = CGRect(
+                    x: 0,
+                    y: 40,
+                    width: self.view.frame.width,
+                    height: self.view.frame.height
+            )
+        }
+        slideUpDrawerAnimator.startAnimation()
     }
     
     override func viewWillAppear(_ animated: Bool) {

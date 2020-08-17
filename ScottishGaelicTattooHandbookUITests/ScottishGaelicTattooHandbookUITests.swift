@@ -56,15 +56,15 @@ class ScottishGaelicTattooHandbookUITests: XCTestCase {
         doneButton.tap()
         sleep(1)
         XCTAssertFalse(doneButton.isHittable)
+        
+        let elementsQuery = scrollViewsQuery.otherElements
+        elementsQuery.staticTexts["Check out Gaelic.co for more blog posts."].tap()
+        
+        XCTAssert(doneButton.isHittable)
+        
+        doneButton.tap()
+        sleep(1)
+        XCTAssertFalse(doneButton.isHittable)
 
-    }
-
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }
