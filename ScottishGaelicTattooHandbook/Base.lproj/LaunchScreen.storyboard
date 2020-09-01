@@ -19,31 +19,32 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullBodyLion" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-v0-elh">
-                                <rect key="frame" x="0.0" y="263" width="300" height="370"/>
+                                <rect key="frame" x="0.0" y="243" width="350" height="410"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="370" id="WPM-ms-Fam"/>
-                                    <constraint firstAttribute="width" constant="300" id="aeF-EY-DI2"/>
+                                    <constraint firstAttribute="width" secondItem="hIT-v0-elh" secondAttribute="height" multiplier="276:323" id="3cH-Kf-T9B"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Scottish Gaelic Tattoo Handbook" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU2-aD-qx0">
-                                <rect key="frame" x="84" y="345" width="300" height="206"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="206" id="4Vb-ef-ej1"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="KRh-OI-dl2"/>
-                                    <constraint firstAttribute="width" constant="300" id="UHp-Km-SdI"/>
-                                </constraints>
+                                <rect key="frame" x="64" y="374.5" width="320" height="147"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="49"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="64"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="DU2-aD-qx0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="64" id="05t-Cr-Ljt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hIT-v0-elh" secondAttribute="trailing" constant="64" id="3Sb-7d-7AL"/>
                             <constraint firstItem="hIT-v0-elh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMC-c8-MjK"/>
                             <constraint firstItem="bVA-pV-6ku" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OG9-a6-bB1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DU2-aD-qx0" secondAttribute="trailing" constant="10" id="SZQ-pz-eIb"/>
                             <constraint firstItem="DU2-aD-qx0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YVD-y5-Wgp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bVA-pV-6ku" secondAttribute="bottom" id="eQW-E0-HSA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DU2-aD-qx0" secondAttribute="trailing" constant="30" id="fPU-U6-qo7"/>
+                            <constraint firstItem="hIT-v0-elh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="icK-9E-Tyg"/>
                             <constraint firstItem="hIT-v0-elh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ltL-cI-5bT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bVA-pV-6ku" secondAttribute="trailing" id="qcf-by-EGe"/>
                             <constraint firstItem="bVA-pV-6ku" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wyi-9Q-NMs"/>
