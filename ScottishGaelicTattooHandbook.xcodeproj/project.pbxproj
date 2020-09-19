@@ -21,6 +21,7 @@
 		76834F2624A80DB7002A0014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */; };
 		76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */; };
 		76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */; };
+		76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishGaelicTattooHandbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookUITests.swift; sourceTree = "<group>"; };
 		76834F3D24A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D62BDC2516A0E8003ED67A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				76834F1F24A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld */,
 				766EB50024CE184E0080D666 /* BlogPostService.swift */,
 				766EB50224CE186C0080D666 /* BlogPost.swift */,
+				76D62BDC2516A0E8003ED67A /* MenuViewController.swift */,
 			);
 			path = ScottishGaelicTattooHandbook;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				766EB50324CE186C0080D666 /* BlogPost.swift in Sources */,
 				76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */,
 				76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */,
+				76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
