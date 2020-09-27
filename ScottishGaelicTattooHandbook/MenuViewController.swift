@@ -12,6 +12,13 @@ import StoreKit
 class MenuViewController: UIViewController {
 
     @IBAction func didTapToRate(_ sender: Any) {
-        SKStoreReviewController.requestReview()
+        if let buttonPressed = sender as? UIButton,
+            buttonPressed.tag == ButtonTag.rateTheApp.rawValue {
+                SKStoreReviewController.requestReview()
+        }
+    }
+    
+    enum ButtonTag: Int {
+        case aboutTheAuthor, contact, rateTheApp, buyTheBook, copyright
     }
 }
