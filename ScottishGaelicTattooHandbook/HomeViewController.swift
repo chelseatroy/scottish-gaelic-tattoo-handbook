@@ -11,9 +11,7 @@ import WebKit
 
 class HomeViewController: UIViewController, WKNavigationDelegate {
     var blogPostService: BlogPostService!
-    
-    var slideUpDrawerView: UIView!
-    var webView: WKWebView!
+    var webViewDrawer: WebViewDrawer!
     
     @IBOutlet weak var waitSpinner: UIActivityIndicatorView!
     
@@ -36,37 +34,9 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         self.waitSpinner.startAnimating()
         
-        self.slideUpDrawerView = UIView(frame: CGRect(
-                x: 0,
-                y: self.view.frame.height,
-                width: self.view.frame.width,
-                height: self.view.frame.height
-        ))
-        self.slideUpDrawerView.backgroundColor = UIColor.systemGray6
-        
-        self.webView = WKWebView()
-        self.webView.navigationDelegate = self
-        self.webView.frame = CGRect(
-                x: 0,
-                y: 60,
-                width: self.view.frame.width,
-                height: self.view.frame.height - 40
-        )
-        self.slideUpDrawerView.addSubview(webView)
-        
-        let dismissButton = UIButton(frame: CGRect(
-            x: 15,
-            y: 15,
-            width: 50,
-            height: 30
-        ))
-        dismissButton.setTitle("Done", for: .normal)
-        dismissButton.setTitleColor(.systemBlue, for: .normal)
-        dismissButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        dismissButton.addTarget(self, action: #selector(dismissDrawer), for: .touchUpInside)
-        self.slideUpDrawerView.addSubview(dismissButton)
-        
-        self.view.addSubview(self.slideUpDrawerView)
+        self.webViewDrawer = WebViewDrawer(for: self)
+    self.webViewDrawer.prepareToInstall()
+    self.view.addSubview(self.webViewDrawer)
         
         self.blogPostService = BlogPostService()
         
@@ -92,48 +62,16 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
 
     }
     
-    @objc func dismissDrawer() {
-        let slideDownDrawerAnimator = UIViewPropertyAnimator(
-            duration:0.5,
-            curve: .easeIn) {
-            self.slideUpDrawerView.frame = CGRect(
-                    x: 0,
-                    y: self.view.frame.height,
-                    width: self.view.frame.width,
-                    height: self.view.frame.height
-            )
-        }
-        slideDownDrawerAnimator.startAnimation()
-    }
-    
     @objc func goToBlogPost(sender: UITapGestureRecognizer) {
         if let blogPostIndex = sender.view?.tag {
-            animateWebViewToURL(urlString: self.blogPosts[blogPostIndex].URL)
+            self.webViewDrawer.animateWebViewToURL(urlString: self.blogPosts[blogPostIndex].URL)
         }
     }
     
     @objc func visitSite(sender: UITapGestureRecognizer) {
-        animateWebViewToURL(urlString: "https://gaelic.co/")
+        self.webViewDrawer.animateWebViewToURL(urlString: "https://gaelic.co/")
     }
-    
-    func animateWebViewToURL(urlString: String) {
-        let url = URL(string: urlString)!
-
-        self.webView.load(URLRequest(url: url))
         
-        let slideUpDrawerAnimator = UIViewPropertyAnimator(
-            duration:0.5,
-            curve: .easeIn) {
-            self.slideUpDrawerView.frame = CGRect(
-                    x: 0,
-                    y: 40,
-                    width: self.view.frame.width,
-                    height: self.view.frame.height
-            )
-        }
-        slideUpDrawerAnimator.startAnimation()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.blogPostService.getBlogPosts(completion: { blogPosts, error in
              guard let confirmedBlogPosts = blogPosts, error == nil else {
