@@ -676,10 +676,10 @@
             </objects>
             <point key="canvasLocation" x="570" y="-99"/>
         </scene>
-        <!--View Controller-->
+        <!--Buy The Book View Controller-->
         <scene sceneID="pVH-mn-txV">
             <objects>
-                <viewController id="wtQ-q8-Tjv" sceneMemberID="viewController">
+                <viewController id="wtQ-q8-Tjv" customClass="BuyTheBookViewController" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3x1-fU-CzY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -794,6 +794,9 @@
                         <viewLayoutGuide key="safeArea" id="l5t-sz-Bc2"/>
                     </view>
                     <navigationItem key="navigationItem" id="PN7-0W-HV0"/>
+                    <connections>
+                        <outlet property="buyTheBookView" destination="7qo-nP-XQp" id="oTh-mD-ivK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58K-tb-dya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 		764FD9562527C16900150737 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
 		764FD9572527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
 		764FD9582527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
+		764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */; };
 		766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */; };
 		766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50024CE184E0080D666 /* BlogPostService.swift */; };
 		766EB50324CE186C0080D666 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50224CE186C0080D666 /* BlogPost.swift */; };
@@ -50,6 +51,7 @@
 		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		764FD9532527B66100150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDrawer.swift; sourceTree = "<group>"; };
 		764FD9592527C2D800150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewDrawer.swift; path = ScottishGaelicTattooHandbook/WebViewDrawer.swift; sourceTree = "<group>"; };
+		764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTheBookViewController.swift; sourceTree = "<group>"; };
 		766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostServiceTests.swift; sourceTree = "<group>"; };
 		766EB50024CE184E0080D666 /* BlogPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostService.swift; sourceTree = "<group>"; };
 		766EB50224CE186C0080D666 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				766EB50224CE186C0080D666 /* BlogPost.swift */,
 				76D62BDC2516A0E8003ED67A /* MenuViewController.swift */,
 				764FD9532527B66100150737 /* WebViewDrawer.swift */,
+				764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */,
 			);
 			path = ScottishGaelicTattooHandbook;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */,
 				76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */,
+				764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */,
 				766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */,
 				76834F1B24A80DB5002A0014 /* SecondViewController.swift in Sources */,
 				76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */,
