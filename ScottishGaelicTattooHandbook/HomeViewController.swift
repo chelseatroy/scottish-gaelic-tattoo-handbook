@@ -69,7 +69,7 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
     }
     
     @objc func visitSite(sender: UITapGestureRecognizer) {
-        self.webViewDrawer.animateWebViewToURL(urlString: "https://gaelic.co/")
+        self.webViewDrawer.animateWebViewToURL(urlString: WebDestination.homepage.rawValue)
     }
         
     override func viewWillAppear(_ animated: Bool) {

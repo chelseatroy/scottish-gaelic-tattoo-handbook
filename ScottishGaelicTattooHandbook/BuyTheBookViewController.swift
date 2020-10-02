@@ -28,9 +28,6 @@ class BuyTheBookViewController: UIViewController {
     }
     
     @objc func goToBookSale(sender: UITapGestureRecognizer) {
-        self.webViewDrawer.animateWebViewToURL(urlString: "https://www.amazon.com/Scottish-Gaelic-Tattoo-Handbook-Authentic/dp/0995099804")
+        self.webViewDrawer.animateWebViewToURL(urlString: WebDestination.bookPurchasePage.rawValue)
     }
-
-    
-
 }
