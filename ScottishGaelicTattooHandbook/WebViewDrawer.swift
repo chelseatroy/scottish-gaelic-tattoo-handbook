@@ -28,14 +28,21 @@ class WebViewDrawer: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func prepareToInstall() {
+    func prepareToInstall(adjustForNavigation: Bool = false) {
          self.backgroundColor = UIColor.systemGray6
          
          self.webView = WKWebView()
         self.webView.navigationDelegate = controller as? WKNavigationDelegate
+        
+        var navigationHeight: Int = 0
+        if adjustForNavigation {
+            navigationHeight = 42
+        }
+        let initialHeight = CGFloat(navigationHeight + 60)
+        
          self.webView.frame = CGRect(
                  x: 0,
-                 y: 60,
+                 y: initialHeight,
                  width: self.controller.view.frame.width,
                  height: self.controller.view.frame.height - 40
          )
@@ -43,7 +50,7 @@ class WebViewDrawer: UIView {
          
          let dismissButton = UIButton(frame: CGRect(
              x: 15,
-             y: 15,
+             y: 15 + navigationHeight,
              width: 50,
              height: 30
          ))

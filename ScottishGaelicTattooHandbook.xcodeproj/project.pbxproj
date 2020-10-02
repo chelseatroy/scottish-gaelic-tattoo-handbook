@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */; };
 		764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
+		764FD9552527C16500150737 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
+		764FD9562527C16900150737 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
+		764FD9572527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
+		764FD9582527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
 		766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */; };
 		766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50024CE184E0080D666 /* BlogPostService.swift */; };
 		766EB50324CE186C0080D666 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50224CE186C0080D666 /* BlogPost.swift */; };
@@ -45,6 +49,7 @@
 /* Begin PBXFileReference section */
 		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		764FD9532527B66100150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDrawer.swift; sourceTree = "<group>"; };
+		764FD9592527C2D800150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewDrawer.swift; path = ScottishGaelicTattooHandbook/WebViewDrawer.swift; sourceTree = "<group>"; };
 		766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostServiceTests.swift; sourceTree = "<group>"; };
 		766EB50024CE184E0080D666 /* BlogPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostService.swift; sourceTree = "<group>"; };
 		766EB50224CE186C0080D666 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		76834F0824A80DB5002A0014 = {
 			isa = PBXGroup;
 			children = (
+				764FD9592527C2D800150737 /* WebViewDrawer.swift */,
 				76834F1324A80DB5002A0014 /* ScottishGaelicTattooHandbook */,
 				76834F2F24A80DB7002A0014 /* ScottishGaelicTattooHandbookTests */,
 				76834F3A24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests */,
@@ -299,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764FD9572527C19700150737 /* WebViewDrawer.swift in Sources */,
 				76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */,
 				7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */,
 				766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */,
+				764FD9552527C16500150737 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */,
+				764FD9582527C19700150737 /* WebViewDrawer.swift in Sources */,
+				764FD9562527C16900150737 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
