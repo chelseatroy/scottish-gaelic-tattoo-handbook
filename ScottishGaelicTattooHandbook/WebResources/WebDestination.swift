@@ -11,4 +11,5 @@ import Foundation
 enum WebDestination: String {
     case homepage = "https://gaelic.co/"
     case bookPurchasePage = "https://www.amazon.com/Scottish-Gaelic-Tattoo-Handbook-Authentic/dp/0995099804"
+    case contactPage = "https://gaelic.co/contact/"
 }

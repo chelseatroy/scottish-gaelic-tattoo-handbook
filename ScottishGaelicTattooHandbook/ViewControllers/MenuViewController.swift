@@ -28,9 +28,16 @@ class MenuViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func didTapToRate(_ sender: Any) {
-        if let buttonPressed = sender as? UIButton,
-            buttonPressed.tag == ButtonTag.rateTheApp.rawValue {
+        print("button pressed")
+        if let buttonPressed = sender as? UIButton {
+            switch buttonPressed.tag {
+            case ButtonTag.rateTheApp.rawValue:
                 SKStoreReviewController.requestReview()
+            case ButtonTag.contact.rawValue:
+                self.webViewDrawer.animateWebViewToURL(urlString: WebDestination.contactPage.rawValue)
+            default:
+                let _ = 7
+            }
         }
     }
     

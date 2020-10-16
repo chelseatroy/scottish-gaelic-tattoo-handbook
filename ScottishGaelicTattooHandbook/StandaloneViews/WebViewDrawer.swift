@@ -120,5 +120,4 @@ class WebViewDrawer: UIView, WKNavigationDelegate {
         self.waitSpinner.isHidden = true
         self.webView.isHidden = false
     }
-    
 }
