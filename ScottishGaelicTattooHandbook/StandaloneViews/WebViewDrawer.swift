@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 import WebKit
 
-class WebViewDrawer: UIView {
+class WebViewDrawer: UIView, WKNavigationDelegate {
     var webView: WKWebView!
     let controller: UIViewController!
+    
+    var waitSpinner: UIImageView!
     
     init(for controller: UIViewController) {
         self.controller = controller
@@ -29,10 +31,10 @@ class WebViewDrawer: UIView {
     }
     
     func prepareToInstall(adjustForNavigation: Bool = false) {
-         self.backgroundColor = UIColor.systemGray6
+        self.backgroundColor = UIColor.systemGray6
          
-         self.webView = WKWebView()
-        self.webView.navigationDelegate = controller as? WKNavigationDelegate
+        self.webView = WKWebView()
+        self.webView.navigationDelegate = self
         
         var navigationHeight: Int = 0
         if adjustForNavigation {
@@ -46,6 +48,7 @@ class WebViewDrawer: UIView {
                  width: self.controller.view.frame.width,
                  height: self.controller.view.frame.height - 40
          )
+         self.webView.isHidden = true
          self.addSubview(webView)
          
          let dismissButton = UIButton(frame: CGRect(
@@ -57,8 +60,24 @@ class WebViewDrawer: UIView {
          dismissButton.setTitle("Done", for: .normal)
          dismissButton.setTitleColor(.systemBlue, for: .normal)
          dismissButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        dismissButton.addTarget(self, action: #selector(dismissDrawer), for: .touchUpInside)
+         dismissButton.addTarget(self, action: #selector(dismissDrawer), for: .touchUpInside)
          self.addSubview(dismissButton)
+        
+        self.waitSpinner = UIImageView(frame: CGRect(
+                        x: ((self.frame.width / 2) - 50),
+                        y: ((self.frame.height / 2) - 50),
+                        width: 100,
+                        height: 100))
+        self.waitSpinner.image = UIImage(named: "knotWithHooks")
+        self.waitSpinner.alpha = 0.5
+        self.addSubview(self.waitSpinner)
+        
+        let rotation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotation.toValue = Double.pi * 2
+        rotation.duration = 1.5
+        rotation.repeatCount = Float.greatestFiniteMagnitude
+        rotation.isCumulative = true
+        self.waitSpinner.layer.add(rotation, forKey: "rotationAnimation")
     }
     
     @objc func dismissDrawer() {
@@ -91,6 +110,15 @@ class WebViewDrawer: UIView {
             )
         }
         slideUpDrawerAnimator.startAnimation()
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        self.waitSpinner.isHidden = false
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.waitSpinner.isHidden = true
+        self.webView.isHidden = false
     }
     
 }
