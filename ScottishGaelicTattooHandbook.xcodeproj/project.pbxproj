@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */; };
+		7627B3992564410C0042C9CB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B3982564410C0042C9CB /* UIColor+Hex.swift */; };
 		764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
-		764FD9552527C16500150737 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
-		764FD9562527C16900150737 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
-		764FD9572527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
-		764FD9582527C19700150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
 		764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */; };
 		764FD95D2527CB3600150737 /* WebDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD95C2527CB3600150737 /* WebDestination.swift */; };
 		766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */; };
@@ -21,13 +18,14 @@
 		76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1424A80DB5002A0014 /* AppDelegate.swift */; };
 		76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1624A80DB5002A0014 /* SceneDelegate.swift */; };
 		76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1824A80DB5002A0014 /* HomeViewController.swift */; };
-		76834F1B24A80DB5002A0014 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1A24A80DB5002A0014 /* SecondViewController.swift */; };
+		76834F1B24A80DB5002A0014 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1A24A80DB5002A0014 /* BrowseViewController.swift */; };
 		76834F1E24A80DB5002A0014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F1C24A80DB5002A0014 /* Main.storyboard */; };
 		76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1F24A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld */; };
 		76834F2324A80DB6002A0014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2224A80DB6002A0014 /* Assets.xcassets */; };
 		76834F2624A80DB7002A0014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */; };
 		76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */; };
 		76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */; };
+		76D2DDFC2560B5F400858DA1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */; };
 		76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		7627B3982564410C0042C9CB /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		764FD9532527B66100150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDrawer.swift; sourceTree = "<group>"; };
 		764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTheBookViewController.swift; sourceTree = "<group>"; };
 		764FD95C2527CB3600150737 /* WebDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDestination.swift; sourceTree = "<group>"; };
@@ -60,7 +59,7 @@
 		76834F1424A80DB5002A0014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76834F1624A80DB5002A0014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76834F1824A80DB5002A0014 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		76834F1A24A80DB5002A0014 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		76834F1A24A80DB5002A0014 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		76834F1D24A80DB5002A0014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76834F2024A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScottishGaelicTattooHandbook.xcdatamodel; sourceTree = "<group>"; };
 		76834F2224A80DB6002A0014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishGaelicTattooHandbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookUITests.swift; sourceTree = "<group>"; };
 		76834F3D24A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		76D62BDC2516A0E8003ED67A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				76834F1824A80DB5002A0014 /* HomeViewController.swift */,
-				76834F1A24A80DB5002A0014 /* SecondViewController.swift */,
+				76834F1A24A80DB5002A0014 /* BrowseViewController.swift */,
 				76D62BDC2516A0E8003ED67A /* MenuViewController.swift */,
 				764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */,
 			);
@@ -124,7 +124,9 @@
 		764FD9612527CD6500150737 /* StandaloneViews */ = {
 			isa = PBXGroup;
 			children = (
+				76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */,
 				764FD9532527B66100150737 /* WebViewDrawer.swift */,
+				7627B3982564410C0042C9CB /* UIColor+Hex.swift */,
 			);
 			path = StandaloneViews;
 			sourceTree = "<group>";
@@ -322,12 +324,14 @@
 				764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */,
 				764FD95D2527CB3600150737 /* WebDestination.swift in Sources */,
 				766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */,
-				76834F1B24A80DB5002A0014 /* SecondViewController.swift in Sources */,
+				76834F1B24A80DB5002A0014 /* BrowseViewController.swift in Sources */,
 				76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */,
 				766EB50324CE186C0080D666 /* BlogPost.swift in Sources */,
 				76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */,
+				7627B3992564410C0042C9CB /* UIColor+Hex.swift in Sources */,
 				76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */,
 				76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */,
+				76D2DDFC2560B5F400858DA1 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764FD9572527C19700150737 /* WebViewDrawer.swift in Sources */,
 				76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */,
 				7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */,
 				766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */,
-				764FD9552527C16500150737 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */,
-				764FD9582527C19700150737 /* WebViewDrawer.swift in Sources */,
-				764FD9562527C16900150737 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
