@@ -47,7 +47,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-hc-zqV">
-                                                                <rect key="frame" x="74.5" y="320.5" width="265" height="166.5"/>
+                                                                <rect key="frame" x="74.5" y="323" width="265" height="124"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daonnan nam chridhe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHd-1m-KJ1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="28"/>
@@ -65,15 +65,12 @@
                                                                         <rect key="frame" x="114" y="87" width="37" height="37"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </activityIndicatorView>
-                                                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QBh-Ev-XEa">
-                                                                        <rect key="frame" x="71.5" y="139" width="122.5" height="27.5"/>
-                                                                    </pageControl>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstItem="TY4-tq-gVp" firstAttribute="leading" secondItem="Npe-A2-HB1" secondAttribute="leading" constant="16" id="E3U-oT-mxF"/>
-                                                            <constraint firstAttribute="bottom" secondItem="nhS-hc-zqV" secondAttribute="bottom" constant="20" id="ETa-qr-9J2"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nhS-hc-zqV" secondAttribute="bottom" constant="60" id="ETa-qr-9J2"/>
                                                             <constraint firstItem="nhS-hc-zqV" firstAttribute="centerX" secondItem="Npe-A2-HB1" secondAttribute="centerX" id="RpY-Em-82s"/>
                                                             <constraint firstItem="TY4-tq-gVp" firstAttribute="top" secondItem="Npe-A2-HB1" secondAttribute="top" constant="16" id="Vjp-0r-0CJ"/>
                                                         </constraints>
