@@ -41,7 +41,7 @@ extension BrowseViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = self.categoriesCollectionView.dequeueReusableCell(
-            withReuseIdentifier: String(describing: CategoryCell.self),
+            withReuseIdentifier: CategoryCell.reuseIdentifier,
             for: indexPath
         ) as? CategoryCell {
             cell.setUpView(

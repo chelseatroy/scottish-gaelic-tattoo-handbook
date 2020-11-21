@@ -9,10 +9,13 @@
 import UIKit
 
 class CategoryCell: UICollectionViewCell {
+    static let reuseIdentifier = String(describing: CategoryCell.self)
+    
     @IBOutlet var categoryLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     
     func setUpView(for category: String, at position: Int) {
+        self.layer.cornerRadius = 8
         self.categoryLabel.text = category
         
         self.backgroundImage.alpha = 0.1
