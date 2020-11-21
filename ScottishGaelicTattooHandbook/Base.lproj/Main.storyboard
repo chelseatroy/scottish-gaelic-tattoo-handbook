@@ -115,7 +115,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKz-jt-WZf" userLabel="Phrases and Clans View">
                                                 <rect key="frame" x="0.0" y="611" width="414" height="170"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="f0K-46-mng">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="f0K-46-mng">
                                                         <rect key="frame" x="20" y="0.0" width="374" height="170"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX5-Et-OSd" userLabel="CollectionViewItem">
