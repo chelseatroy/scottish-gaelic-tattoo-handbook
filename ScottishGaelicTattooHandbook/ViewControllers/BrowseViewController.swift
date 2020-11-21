@@ -12,23 +12,6 @@ class BrowseViewController: UIViewController {
 
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
-    @IBAction func didSwitchViews(_ sender: Any) {
-        let segments = sender as! UISegmentedControl
-        
-        enum PhraseClanSegment: Int {
-            case phrases, clans
-        }
-        
-        switch(segments.selectedSegmentIndex) {
-        case PhraseClanSegment.phrases.rawValue:
-            self.categoriesCollectionView.isHidden = false
-        case PhraseClanSegment.clans.rawValue:
-            self.categoriesCollectionView.isHidden = true
-        default:
-            let _ = 7
-        }
-    }
-    
     let categories = [
         "Place & Identity",
         "Family",
@@ -47,9 +30,29 @@ class BrowseViewController: UIViewController {
         
         self.categoriesCollectionView.delegate = self
         self.categoriesCollectionView.dataSource = self
-        
     }
 
+    
+    @IBAction func didSwitchViews(_ sender: Any) {
+        let segments = sender as! UISegmentedControl
+        
+        enum PhraseClanSegment: Int {
+            case phrases, clans
+        }
+        
+        switch(segments.selectedSegmentIndex) {
+        case PhraseClanSegment.phrases.rawValue:
+            self.categoriesCollectionView.isHidden = false
+            self.clansTableView.isHidden = true
+        case PhraseClanSegment.clans.rawValue:
+            self.categoriesCollectionView.isHidden = true
+            self.clansTableView.isHidden = false
+        default:
+            let _ = 7
+        }
+    }
+    
+   
 }
 
 extension BrowseViewController: UICollectionViewDataSource {
