@@ -434,6 +434,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="didSwitchViews:" destination="8rJ-Kc-sve" eventType="valueChanged" id="lwo-pB-jkD"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Jd-Oi-bTb">
                                 <rect key="frame" x="32" y="183" width="350" height="630"/>
