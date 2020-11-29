@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		76068A2E256A254600F387B8 /* PhraseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A2D256A254600F387B8 /* PhraseCategoryViewController.swift */; };
 		76068A33256A255E00F387B8 /* ClansListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A32256A255E00F387B8 /* ClansListViewController.swift */; };
+		76068A3B2573561300F387B8 /* ClanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A3A2573561300F387B8 /* ClanCell.swift */; };
 		7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */; };
 		7627B3992564410C0042C9CB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B3982564410C0042C9CB /* UIColor+Hex.swift */; };
 		764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		76068A2D256A254600F387B8 /* PhraseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCategoryViewController.swift; sourceTree = "<group>"; };
 		76068A32256A255E00F387B8 /* ClansListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClansListViewController.swift; sourceTree = "<group>"; };
+		76068A3A2573561300F387B8 /* ClanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanCell.swift; sourceTree = "<group>"; };
 		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		7627B3982564410C0042C9CB /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		764FD9532527B66100150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDrawer.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */,
 				764FD9532527B66100150737 /* WebViewDrawer.swift */,
 				7627B3982564410C0042C9CB /* UIColor+Hex.swift */,
+				76068A3A2573561300F387B8 /* ClanCell.swift */,
 			);
 			path = StandaloneViews;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				76068A2E256A254600F387B8 /* PhraseCategoryViewController.swift in Sources */,
 				764FD95D2527CB3600150737 /* WebDestination.swift in Sources */,
 				766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */,
+				76068A3B2573561300F387B8 /* ClanCell.swift in Sources */,
 				76834F1B24A80DB5002A0014 /* BrowseViewController.swift in Sources */,
 				76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */,
 				766EB50324CE186C0080D666 /* BlogPost.swift in Sources */,
