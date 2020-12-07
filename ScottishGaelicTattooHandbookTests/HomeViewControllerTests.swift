@@ -58,7 +58,7 @@ func testTableView_loadsBirds() {
         var mockBlogPosts: [BlogPost]?
         var mockError: Error?
         
-        override func getBlogPosts(completion: @escaping ([BlogPost]?, Error?) -> ()) {
+        override func retrieve(completion: @escaping ([BlogPost]?, Error?) -> ()) {
                 completion(mockBlogPosts, mockError)
         }
 

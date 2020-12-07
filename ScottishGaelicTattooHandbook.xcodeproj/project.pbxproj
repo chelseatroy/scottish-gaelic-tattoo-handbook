@@ -10,13 +10,14 @@
 		76068A2E256A254600F387B8 /* PhraseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A2D256A254600F387B8 /* PhraseCategoryViewController.swift */; };
 		76068A33256A255E00F387B8 /* ClansListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A32256A255E00F387B8 /* ClansListViewController.swift */; };
 		76068A3B2573561300F387B8 /* ClanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A3A2573561300F387B8 /* ClanCell.swift */; };
+		76068A5B257DE3E700F387B8 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76068A5A257DE3E700F387B8 /* Services.swift */; };
 		7618855824D4A3E2007DA4BB /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */; };
 		7627B3992564410C0042C9CB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B3982564410C0042C9CB /* UIColor+Hex.swift */; };
 		764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD9532527B66100150737 /* WebViewDrawer.swift */; };
 		764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */; };
 		764FD95D2527CB3600150737 /* WebDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FD95C2527CB3600150737 /* WebDestination.swift */; };
 		766EB4FF24CE17790080D666 /* BlogPostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */; };
-		766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50024CE184E0080D666 /* BlogPostService.swift */; };
+		766EB50124CE184E0080D666 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50024CE184E0080D666 /* HTTPService.swift */; };
 		766EB50324CE186C0080D666 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766EB50224CE186C0080D666 /* BlogPost.swift */; };
 		76834F1524A80DB5002A0014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1424A80DB5002A0014 /* AppDelegate.swift */; };
 		76834F1724A80DB5002A0014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F1624A80DB5002A0014 /* SceneDelegate.swift */; };
@@ -53,13 +54,14 @@
 		76068A2D256A254600F387B8 /* PhraseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCategoryViewController.swift; sourceTree = "<group>"; };
 		76068A32256A255E00F387B8 /* ClansListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClansListViewController.swift; sourceTree = "<group>"; };
 		76068A3A2573561300F387B8 /* ClanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanCell.swift; sourceTree = "<group>"; };
+		76068A5A257DE3E700F387B8 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		7618855724D4A3E2007DA4BB /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		7627B3982564410C0042C9CB /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		764FD9532527B66100150737 /* WebViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDrawer.swift; sourceTree = "<group>"; };
 		764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTheBookViewController.swift; sourceTree = "<group>"; };
 		764FD95C2527CB3600150737 /* WebDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDestination.swift; sourceTree = "<group>"; };
 		766EB4FE24CE17790080D666 /* BlogPostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostServiceTests.swift; sourceTree = "<group>"; };
-		766EB50024CE184E0080D666 /* BlogPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostService.swift; sourceTree = "<group>"; };
+		766EB50024CE184E0080D666 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		766EB50224CE186C0080D666 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		76834F1124A80DB5002A0014 /* ScottishGaelicTattooHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottishGaelicTattooHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76834F1424A80DB5002A0014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,9 +124,10 @@
 		764FD9602527CD2D00150737 /* WebResources */ = {
 			isa = PBXGroup;
 			children = (
-				766EB50024CE184E0080D666 /* BlogPostService.swift */,
+				766EB50024CE184E0080D666 /* HTTPService.swift */,
 				766EB50224CE186C0080D666 /* BlogPost.swift */,
 				764FD95C2527CB3600150737 /* WebDestination.swift */,
+				76068A5A257DE3E700F387B8 /* Services.swift */,
 			);
 			path = WebResources;
 			sourceTree = "<group>";
@@ -328,13 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76068A5B257DE3E700F387B8 /* Services.swift in Sources */,
 				76068A33256A255E00F387B8 /* ClansListViewController.swift in Sources */,
 				764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */,
 				76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */,
 				764FD95B2527CA6700150737 /* BuyTheBookViewController.swift in Sources */,
 				76068A2E256A254600F387B8 /* PhraseCategoryViewController.swift in Sources */,
 				764FD95D2527CB3600150737 /* WebDestination.swift in Sources */,
-				766EB50124CE184E0080D666 /* BlogPostService.swift in Sources */,
+				766EB50124CE184E0080D666 /* HTTPService.swift in Sources */,
 				76068A3B2573561300F387B8 /* ClanCell.swift in Sources */,
 				76834F1B24A80DB5002A0014 /* BrowseViewController.swift in Sources */,
 				76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */,

@@ -8,39 +8,41 @@
 
 import Foundation
 
-enum BlogPostCallingError: Error {
+enum HTTPServiceError: Error {
     case problemGeneratingURL
     case problemGettingDataFromAPI
     case problemDecodingData
 }
 
-class BlogPostService {
-    private let urlString = "https://gaelic.co/wp-json/wp/v2/posts?per_page=3"
+class HTTPService<T: Decodable> {
+    var urlString = ""
     
-    func getBlogPosts(completion: @escaping ([BlogPost]?, Error?) -> ()) {
+    init(endpoint: String) {
+        self.urlString = endpoint
+    }
+    
+    func retrieve(completion: @escaping (T?, Error?) -> ()) {
             guard let url = URL(string: self.urlString) else {
-                DispatchQueue.main.async { completion(nil, BlogPostCallingError.problemGeneratingURL) }
+                DispatchQueue.main.async { completion(nil, HTTPServiceError.problemGeneratingURL) }
                 return
         }
                 
             let request = URLRequest(url: url)
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {
-                    DispatchQueue.main.async { completion(nil, BlogPostCallingError.problemGettingDataFromAPI) }
+                    DispatchQueue.main.async { completion(nil, HTTPServiceError.problemGettingDataFromAPI) }
                     return
                 }
                 
                 do {
-                    let blogPosts = try JSONDecoder().decode([BlogPost].self, from: data)
-                    DispatchQueue.main.async { completion(blogPosts, nil) }
+                    let result = try JSONDecoder().decode(T.self, from: data)
+                    DispatchQueue.main.async { completion(result, nil) }
                 } catch (let error) {
                     print(error)
-                    DispatchQueue.main.async { completion(nil, BlogPostCallingError.problemDecodingData) }
+                    DispatchQueue.main.async { completion(nil, HTTPServiceError.problemDecodingData) }
                 }
                                                         
             }
             task.resume()
         }
-
-    
 }

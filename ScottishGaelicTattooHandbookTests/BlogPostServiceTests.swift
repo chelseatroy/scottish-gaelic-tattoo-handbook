@@ -29,7 +29,7 @@ class BlogPostServiceTests: XCTestCase {
         let promise = expectation(description: "Completion handler is invoked")
         
         //When
-        self.systemUnderTest.getBlogPosts(completion: { data, shouldntHappen in
+        self.systemUnderTest.retrieve(completion: { data, shouldntHappen in
             blogPosts = data
             error = shouldntHappen
             promise.fulfill()

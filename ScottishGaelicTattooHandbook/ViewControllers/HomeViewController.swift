@@ -73,7 +73,7 @@ class HomeViewController: UIViewController, WKNavigationDelegate {
     }
         
     override func viewWillAppear(_ animated: Bool) {
-        self.blogPostService.getBlogPosts(completion: { blogPosts, error in
+        self.blogPostService.retrieve(completion: { blogPosts, error in
              guard let confirmedBlogPosts = blogPosts, error == nil else {
                  return
              }
