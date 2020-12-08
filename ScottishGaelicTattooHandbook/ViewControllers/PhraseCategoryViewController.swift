@@ -12,26 +12,27 @@ class PhraseCategoryViewController: UIViewController {
 
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
-    let categories = [
-        "Place & Identity",
-        "Family",
-        "Love & Friendship",
-        "In Memoriam",
-        "Religious & Spiritual",
-        "Courage, Honor & Military",
-        "Work, Activity & Identity",
-        "Emotion, Quality & Concepts",
-        "Gaelic Proverbs & Expressions"
-        
-    ]
+    var categories = [String]()
+    var phraseCategoryService: PhraseCategoryService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.phraseCategoryService = PhraseCategoryService()
+        
         self.categoriesCollectionView.delegate = self
         self.categoriesCollectionView.dataSource = self
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.phraseCategoryService.retrieve(completion: { categories, error in
+             guard let confirmedCategories = categories, error == nil else {
+                 return
+             }
+            self.categories = confirmedCategories
+            self.categoriesCollectionView.reloadData()
+        })
+    }
 }
 
 extension PhraseCategoryViewController: UICollectionViewDataSource {

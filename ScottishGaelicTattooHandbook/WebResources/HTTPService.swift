@@ -15,10 +15,16 @@ enum HTTPServiceError: Error {
 }
 
 class HTTPService<T: Decodable> {
-    var urlString = ""
+    var urlString: String
     
-    init(endpoint: String) {
+    // TODO: Replace default endpoint, which servesto prevent problemGettingDataFromAPI error
+    // on services that stub the completion result.
+    init(endpoint: String = "https://gaelic.co/wp-json/wp/v2/posts?per_page=3") {
         self.urlString = endpoint
+    }
+    
+    func unwrap(_ data: Data) throws -> T {
+        return try JSONDecoder().decode(T.self, from: data)
     }
     
     func retrieve(completion: @escaping (T?, Error?) -> ()) {
@@ -35,7 +41,7 @@ class HTTPService<T: Decodable> {
                 }
                 
                 do {
-                    let result = try JSONDecoder().decode(T.self, from: data)
+                    let result = try self.unwrap(data)
                     DispatchQueue.main.async { completion(result, nil) }
                 } catch (let error) {
                     print(error)
