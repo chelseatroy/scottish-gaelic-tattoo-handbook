@@ -12,6 +12,7 @@ class ClansListViewController: UIViewController {
     @IBOutlet weak var clanTableView: UITableView!
     
     var clans = [String]()
+    var clanService: ClanService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,17 @@ class ClansListViewController: UIViewController {
         self.clanTableView.dataSource = self
         self.clanTableView.delegate = self
         
-        self.clans = ["McAllister", "McBain", "McEwan", "McGregor"]
+        self.clanService = ClanService()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.clanService.retrieve(completion: { clans, error in
+             guard let confirmedClans = clans, error == nil else {
+                 return
+             }
+            self.clans = confirmedClans
+            self.clanTableView.reloadData()
+        })
     }
 }
 

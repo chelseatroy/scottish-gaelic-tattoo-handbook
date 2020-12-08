@@ -14,8 +14,6 @@ class BlogPostService: HTTPService<[BlogPost]> {
 }
 
 class PhraseCategoryService: HTTPService<[String]> {
-    
-    
     override func unwrap(_ data: Data) throws -> [String] {
         return [
             "Place & Identity",
@@ -28,5 +26,16 @@ class PhraseCategoryService: HTTPService<[String]> {
             "Emotion, Quality & Concepts",
             "Gaelic Proverbs & Expressions"
     ]
+    }
+}
+
+class ClanService: HTTPService<[String]> {
+    override func unwrap(_ data: Data) throws -> [String] {
+        return [
+            "McAllister",
+            "McBain",
+            "McEwan",
+            "McGregor"
+        ]
     }
 }
