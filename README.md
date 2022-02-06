@@ -1,6 +1,6 @@
 # Scottish Gaelic Tattoo App
 
-An app for helping folks translate phrases fo tattoos in Scottish Gaelic!
+An app for helping folks translate phrases for tattoos in Scottish Gaelic!
 
 Based on the popular [Scottish Gaelic Tattoo Handbook](https://www.bradanpress.com/gaelic-tattoo-handbook/) by Emily McEwan, published by Bradan Press.
 
