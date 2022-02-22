@@ -29,6 +29,7 @@
 		76834F2624A80DB7002A0014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76834F2424A80DB7002A0014 /* LaunchScreen.storyboard */; };
 		76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */; };
 		76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */; };
+		76C953FB27BA12A0009229EE /* PhraseOptionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C953FA27BA12A0009229EE /* PhraseOptionsListViewController.swift */; };
 		76D2DDFC2560B5F400858DA1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */; };
 		76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		76834F3724A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishGaelicTattooHandbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookUITests.swift; sourceTree = "<group>"; };
 		76834F3D24A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C953FA27BA12A0009229EE /* PhraseOptionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseOptionsListViewController.swift; sourceTree = "<group>"; };
 		76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		76D62BDC2516A0E8003ED67A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				764FD95A2527CA6700150737 /* BuyTheBookViewController.swift */,
 				76068A2D256A254600F387B8 /* PhraseCategoryViewController.swift */,
 				76068A32256A255E00F387B8 /* ClansListViewController.swift */,
+				76C953FA27BA12A0009229EE /* PhraseOptionsListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				76068A2E256A254600F387B8 /* PhraseCategoryViewController.swift in Sources */,
 				764FD95D2527CB3600150737 /* WebDestination.swift in Sources */,
 				766EB50124CE184E0080D666 /* HTTPService.swift in Sources */,
+				76C953FB27BA12A0009229EE /* PhraseOptionsListViewController.swift in Sources */,
 				76068A3B2573561300F387B8 /* ClanCell.swift in Sources */,
 				76834F1B24A80DB5002A0014 /* BrowseViewController.swift in Sources */,
 				76834F1924A80DB5002A0014 /* HomeViewController.swift in Sources */,

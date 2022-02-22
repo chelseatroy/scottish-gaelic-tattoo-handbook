@@ -482,7 +482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="-1619"/>
+            <point key="canvasLocation" x="214" y="-2142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -1069,7 +1069,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygs-f7-mBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273.913043478261" y="-1473.5491071428571"/>
+            <point key="canvasLocation" x="1051" y="-1472"/>
         </scene>
         <!--Phrase Category View Controller-->
         <scene sceneID="KQA-8c-314">
@@ -1092,7 +1092,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="XBk-jy-6SE" customClass="CategoryCell" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wwF-MM-Pf1" customClass="CategoryCell" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wwF-MM-Pf1" customClass="CategoryCell" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="110"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
@@ -1195,11 +1195,43 @@
                     </view>
                     <connections>
                         <outlet property="categoriesCollectionView" destination="VLa-MC-Gfo" id="baP-RL-kuf"/>
+                        <segue destination="uny-B3-Gsi" kind="show" identifier="showPhraseOptionsListSegue" id="GkR-T6-tdp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czH-Ib-O34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1275" y="-2016"/>
+            <point key="canvasLocation" x="951" y="-2719"/>
+        </scene>
+        <!--Phrase Options List View Controller-->
+        <scene sceneID="gdn-kG-saU">
+            <objects>
+                <viewController id="uny-B3-Gsi" customClass="PhraseOptionsListViewController" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VXa-w5-DeV">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="576"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-T7-dSb">
+                                <rect key="frame" x="27" y="274" width="307" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GvY-e6-R44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xcX-T7-dSb" firstAttribute="centerX" secondItem="VXa-w5-DeV" secondAttribute="centerX" id="8Jb-4k-otI"/>
+                            <constraint firstItem="xcX-T7-dSb" firstAttribute="centerY" secondItem="VXa-w5-DeV" secondAttribute="centerY" id="Um1-Y8-eqe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LOa-Ke-iz6"/>
+                    <connections>
+                        <outlet property="phraseTitle" destination="xcX-T7-dSb" id="FYm-nI-lRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEN-8P-pNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642.0289855072465" y="-2663.1696428571427"/>
         </scene>
     </scenes>
     <resources>

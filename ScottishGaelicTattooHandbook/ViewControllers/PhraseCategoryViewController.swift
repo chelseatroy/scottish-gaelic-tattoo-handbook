@@ -14,6 +14,7 @@ class PhraseCategoryViewController: UIViewController {
     
     var categories = [String]()
     var phraseCategoryService: PhraseCategoryService!
+    var tappedCategory = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,18 @@ extension PhraseCategoryViewController: UICollectionViewDataSource {
 
 extension PhraseCategoryViewController: UICollectionViewDelegate {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhraseOptionsListSegue" {
+            let destination = segue.destination as! PhraseOptionsListViewController
+            destination.category = self.tappedCategory
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        self.tappedCategory = self.categories[indexPath.row]
+        performSegue(withIdentifier: "showPhraseOptionsListSegue", sender: self)
+    }
 }
 
 
