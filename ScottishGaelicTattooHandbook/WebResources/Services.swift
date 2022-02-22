@@ -39,3 +39,13 @@ class ClanService: HTTPService<[String]> {
         ]
     }
 }
+
+class PhraseService: HTTPService<[String]> {
+    override func unwrap(_ data: Data) throws -> [String] {
+        return [
+            "Cape Breton",
+            "Island Girl",
+            "Birthplace"
+        ]
+    }
+}

@@ -30,6 +30,7 @@
 		76834F3124A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3024A80DB7002A0014 /* ScottishGaelicTattooHandbookTests.swift */; };
 		76834F3C24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */; };
 		76C953FB27BA12A0009229EE /* PhraseOptionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C953FA27BA12A0009229EE /* PhraseOptionsListViewController.swift */; };
+		76C9540627C482C0009229EE /* PhraseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9540527C482C0009229EE /* PhraseCell.swift */; };
 		76D2DDFC2560B5F400858DA1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */; };
 		76D62BDD2516A0E8003ED67A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62BDC2516A0E8003ED67A /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		76834F3B24A80DB7002A0014 /* ScottishGaelicTattooHandbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishGaelicTattooHandbookUITests.swift; sourceTree = "<group>"; };
 		76834F3D24A80DB7002A0014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C953FA27BA12A0009229EE /* PhraseOptionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseOptionsListViewController.swift; sourceTree = "<group>"; };
+		76C9540527C482C0009229EE /* PhraseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseCell.swift; sourceTree = "<group>"; };
 		76D2DDFB2560B5F400858DA1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		76D62BDC2516A0E8003ED67A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				764FD9532527B66100150737 /* WebViewDrawer.swift */,
 				7627B3982564410C0042C9CB /* UIColor+Hex.swift */,
 				76068A3A2573561300F387B8 /* ClanCell.swift */,
+				76C9540527C482C0009229EE /* PhraseCell.swift */,
 			);
 			path = StandaloneViews;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76068A5B257DE3E700F387B8 /* Services.swift in Sources */,
+				76C9540627C482C0009229EE /* PhraseCell.swift in Sources */,
 				76068A33256A255E00F387B8 /* ClansListViewController.swift in Sources */,
 				764FD9542527B66100150737 /* WebViewDrawer.swift in Sources */,
 				76834F2124A80DB5002A0014 /* ScottishGaelicTattooHandbook.xcdatamodeld in Sources */,

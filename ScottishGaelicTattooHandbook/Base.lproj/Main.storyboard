@@ -1210,23 +1210,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="350" height="576"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-T7-dSb">
-                                <rect key="frame" x="27" y="274" width="307" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zis-eL-RJU">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="oWV-om-kJg"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bDP-tK-CUb">
+                                <rect key="frame" x="0.0" y="56" width="350" height="520"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationLevel="1" indentationWidth="10" reuseIdentifier="PhraseCell" rowHeight="80" id="w28-kX-WXO" customClass="PhraseCell" customModule="ScottishGaelicTattooHandbook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="350" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w28-kX-WXO" id="iMe-9R-6jl">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cg-RR-MuB">
+                                                    <rect key="frame" x="16" y="25.5" width="318" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0Cg-RR-MuB" firstAttribute="leading" secondItem="iMe-9R-6jl" secondAttribute="leading" constant="16" id="4Bt-PJ-A6h"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Cg-RR-MuB" secondAttribute="trailing" constant="16" id="MvC-zo-f34"/>
+                                                <constraint firstItem="0Cg-RR-MuB" firstAttribute="centerY" secondItem="iMe-9R-6jl" secondAttribute="centerY" id="avi-Ng-o8o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="phraseLabel" destination="0Cg-RR-MuB" id="0NO-wo-5Ne"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GvY-e6-R44"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xcX-T7-dSb" firstAttribute="centerX" secondItem="VXa-w5-DeV" secondAttribute="centerX" id="8Jb-4k-otI"/>
-                            <constraint firstItem="xcX-T7-dSb" firstAttribute="centerY" secondItem="VXa-w5-DeV" secondAttribute="centerY" id="Um1-Y8-eqe"/>
+                            <constraint firstItem="bDP-tK-CUb" firstAttribute="top" secondItem="zis-eL-RJU" secondAttribute="bottom" id="IHC-gt-CnL"/>
+                            <constraint firstItem="bDP-tK-CUb" firstAttribute="leading" secondItem="GvY-e6-R44" secondAttribute="leading" id="LdM-83-UDY"/>
+                            <constraint firstItem="GvY-e6-R44" firstAttribute="bottom" secondItem="bDP-tK-CUb" secondAttribute="bottom" id="eXh-NW-oXQ"/>
+                            <constraint firstItem="GvY-e6-R44" firstAttribute="bottom" secondItem="bDP-tK-CUb" secondAttribute="bottom" id="etM-Yf-26H"/>
+                            <constraint firstItem="GvY-e6-R44" firstAttribute="trailing" secondItem="bDP-tK-CUb" secondAttribute="trailing" id="frL-8Z-Vgu"/>
+                            <constraint firstItem="zis-eL-RJU" firstAttribute="centerX" secondItem="GvY-e6-R44" secondAttribute="centerX" id="kf1-Ss-c2j"/>
+                            <constraint firstItem="zis-eL-RJU" firstAttribute="top" secondItem="GvY-e6-R44" secondAttribute="top" id="p0Q-zP-zef"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LOa-Ke-iz6"/>
                     <connections>
-                        <outlet property="phraseTitle" destination="xcX-T7-dSb" id="FYm-nI-lRY"/>
+                        <outlet property="phraseTableView" destination="bDP-tK-CUb" id="BEa-dG-AFD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEN-8P-pNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
